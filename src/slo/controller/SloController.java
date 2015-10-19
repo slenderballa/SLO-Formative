@@ -29,8 +29,33 @@ public class SloController {
 		}
 		else
 		{
-			JOptionPane.showMessageDialog(null, "You're off by " + diff);
+			JOptionPane.showMessageDialog(null, "You're trash, you're off by " + diff);
 		}
+		
+		double myWeight = 200.5;
+		
+		
+		String temp1 = myPopups.grabAnswer("Type in your exact weight");
+		double userWeight = Double.parseDouble(temp1);
+		
+		if ( userWeight > myWeight)
+			{
+				double wdiff = userWeight - myWeight;
+				myPopups.showResponse("You are " + wdiff + " pounds more than me");
+				
+			}
+		else if ( userWeight < myWeight)
+		{
+			double wdiff = myWeight - userWeight;
+			myPopups.showResponse("You are " + wdiff + " less than me");
+		}
+		else 
+		{
+			myPopups.showResponse("We are the same weight");
+		}
+		
+		
+				
 	}
 	
 	
