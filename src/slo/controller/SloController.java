@@ -47,7 +47,7 @@ public class SloController {
 		else if ( userWeight < myWeight)
 		{
 			double wdiff = myWeight - userWeight;
-			myPopups.showResponse("You are " + wdiff + " less than me");
+			myPopups.showResponse("You are " + wdiff + " pounds less than me");
 		}
 		else 
 		{
